@@ -15,9 +15,17 @@ export default makeStyles(theme => ({
     image: {
         marginLeft: '15px', 
     },
+    grid: {
+        margin: 'auto'
+    },
     [theme.breakpoints.down('sm')]: {
         mainContainer: {
             flexDirection: 'column-reverse'
+        }
+    },
+    [theme.breakpoints.up('md')]: {
+        grid: {
+            margin: '0'
         }
     }
 }));
